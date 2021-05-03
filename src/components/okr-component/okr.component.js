@@ -18,7 +18,7 @@ const OKRComponent = () => {
         setIsLoading(false);
         setOkrsData(groupOkrsByParentObjectives(response.data.data));
       })
-      .catch(error => console.log('Error:', error));
+      .catch((error) => { throw new Error(error); });
   }, []);
   // The function below changes the JSON structure and group OKRs By ParentObjectives.
   // Add four keys to all objects
@@ -76,10 +76,10 @@ const OKRComponent = () => {
           onFilterChangeHandler={onFilterChangeHandler}
         />
       </div>
+      <ErrorBoundaryComponent>
       {isLoading
         ? <div className="loader"><img src={Loader} /></div>
-        : <ErrorBoundaryComponent>
-          {okrsData &&
+        : okrsData &&
               okrsData.map((parentItem, index) => {
                 return (
                     <ObjectivesComponent
@@ -90,9 +90,8 @@ const OKRComponent = () => {
                     />
                 );
               })
-            }
-            </ErrorBoundaryComponent>
         }
+        </ErrorBoundaryComponent>
     </OKRComponentWrapper>
   );
 };

@@ -13,6 +13,8 @@ export const FilterComponentWrapper = styled.div`
         font-size: 16px;
         font-weight: 600;
         padding: 5px;
+        margin-left: 10px;
+        border-radius: 5px;
     }
     .filter-dropdown:focus {
         outline: none;
