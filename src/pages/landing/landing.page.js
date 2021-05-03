@@ -1,7 +1,7 @@
 import React from 'react';
-import HeaderComponent from '../../components/headercomponent/header.component';
-import OKRComponent from '../../components/okrcomponent/okr.component';
-import FooterComponent from '../../components/footercomponent/footer.component';
+import HeaderComponent from '../../components/header-component/header.component';
+import OKRComponent from '../../components/okr-component/okr.component';
+import FooterComponent from '../../components/footer-component/footer.component';
 const LandingPage = () => {
   return (
     <div>

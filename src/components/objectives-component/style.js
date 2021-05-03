@@ -20,6 +20,9 @@ export const ParentObjective = styled.div`
                 font-size: 15px;
             }
         }
+        .parent-dropdown:focus{
+            outline: none;
+        }
         .user-circle {
             font-size: 18px;
             margin: 0 10px;

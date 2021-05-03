@@ -18,6 +18,11 @@ export const themeColors = {
   border: '#e6edf5'
 };
 
+export const enums = Object.freeze({
+  OKRS_TITLE: 'OKRs',
+  FILTER_ALL: 'All',
+  CATEGORY_FILTERS: 'Category Filters:'
+});
 // export const okrsData = {
 //     "data": [
 //       {

@@ -9,6 +9,15 @@ export const OKRComponentWrapper = styled.div`
     box-shadow: 0 10px 20px 0 rgb(174 201 228 / 30%);
     overflow-y: scroll;
     color: ${themeColors.parent};
+    .loader {
+        img {
+            width: 120px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) 
+        }
+    }
     .okrs-container {
         display: flex;
         justify-content: space-between;
@@ -21,6 +30,11 @@ export const OKRComponentWrapper = styled.div`
         width: 100%;
     }
     @media (max-width:${deviceWidths.phoneWidth}) {
+        .loader {
+            img {
+                width: 80px;
+            }
+        }
         .okrs-container { 
             font-size: 20px;
             flex-direction: column;

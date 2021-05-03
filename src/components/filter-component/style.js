@@ -6,7 +6,7 @@ export const FilterComponentWrapper = styled.div`
         font-size: 18px;
         font-weight: 500;
     }
-    select {
+    .filter-dropdown {
         background-color: ${themeColors.button};
         border-color: ${themeColors.button};
         color: ${themeColors.white};
@@ -14,7 +14,7 @@ export const FilterComponentWrapper = styled.div`
         font-weight: 600;
         padding: 5px;
     }
-    select:focus {
+    .filter-dropdown:focus {
         outline: none;
     }
     @media (max-width:${deviceWidths.phoneWidth}) {
